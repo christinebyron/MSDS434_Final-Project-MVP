@@ -1,0 +1,4 @@
+SELECT
+  *
+FROM `msds434-cohort-analysis-mvp.citibikenyc_analysis.citibikenyc_cleaneddata`
+WHERE usertype = 'Subscriber'
