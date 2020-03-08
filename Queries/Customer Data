@@ -1,0 +1,8 @@
+SELECT
+  *, 
+  CASE WHEN minutes > 30 
+       THEN 'yes'
+       ELSE 'no'
+       END AS over30min  
+FROM `msds434-cohort-analysis-mvp.citibikenyc_analysis.citibikenyc_cleaneddata`
+WHERE usertype = 'Customer'
