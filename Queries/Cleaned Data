@@ -1,0 +1,17 @@
+SELECT 
+  *,
+  ST_DISTANCE(
+        ST_GEOGPOINT(start_station_longitude, start_station_latitude),
+        ST_GEOGPOINT(end_station_longitude, end_station_latitude)) as distance,
+  (tripduration/60) AS minutes,
+  (2020 - birth_year) AS age,
+  EXTRACT(QUARTER from starttime) AS season,
+  EXTRACT(DAYOFWEEK from starttime) AS dayofweek,
+  EXTRACT(HOUR from starttime) AS hour
+FROM `bigquery-public-data.new_york.citibike_trips`
+WHERE
+  gender != 'unknown'
+  AND birth_year > 1930
+  AND tripduration > 90
+  AND tripduration < 10800
+  AND birth_year IS NOT NULL
