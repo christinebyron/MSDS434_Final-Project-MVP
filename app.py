@@ -31,6 +31,9 @@ def predict():
 
     # send back to browser
     output = {'results': int(result[0])}
+    
+    pickle.dump(output, open( "save.p", "wb" ), protocol=2
+    
 
     # return data
     return jsonify(results=output)
