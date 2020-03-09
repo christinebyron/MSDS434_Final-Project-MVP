@@ -1,0 +1,5 @@
+{
+  "name": "Citi Bike NY Flask ML Model",
+  "description": "Deploy a ML Model of Citi Bike NY to Heroku using a Flask API",
+  "keywords": ["python", "flask", "static"]
+}
