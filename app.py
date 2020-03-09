@@ -11,9 +11,7 @@ import pickle
 # load model
 with open('MSDS434_Final-Project-MVP/model.pkl', 'rb') as file:
     model = pickle.load(file)
-    
-    pickle.dump(model, open( "MSDS434_Final-Project-MVP/model.pkl", "wb" ), protocol=2    
-
+ 
 # app
 app = Flask(__name__)
 
