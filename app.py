@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+
+"""
+Commandline tool for interacting with library
+"""
+
 import pandas as pd
 from flask import Flask, jsonify, request
 import pickle
