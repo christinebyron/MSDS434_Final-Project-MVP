@@ -9,7 +9,8 @@ from flask import Flask, jsonify, request
 import pickle
 
 # load model
-model = pickle.load(open('MSDS434_Final-Project-MVP/model.pkl','rb'))
+with open('model.pkl', 'rb') as file:
+    model = pickle.load(file)
 
 # app
 app = Flask(__name__)
