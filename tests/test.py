@@ -1,4 +1,4 @@
-import main
+import app
 
 
 def test_index():
