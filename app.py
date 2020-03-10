@@ -5,7 +5,7 @@ Commandline tool for interacting with library
 """
 
 import pandas as pd
-import logistics
+import logistic
 from flask import Flask, jsonify, request
 import pickle
 
