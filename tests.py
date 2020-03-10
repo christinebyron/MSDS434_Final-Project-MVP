@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
-"""#Test Flask on Local Host"""
+"""#Test Flask"""
 
 import requests
 import json
 
 # local url
-url = 'http://localhost:5000/'
+url = 'https://127.0.0.1:5000/'
 
 # test data
 data = {  'start_station_id': 250
