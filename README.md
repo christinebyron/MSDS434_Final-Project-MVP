@@ -22,3 +22,5 @@ The data includes:
    *	User Type (Customer = 24-hour pass or 3-day pass user; Subscriber = Annual Member)
    *	Gender (Zero = unknown; 1 = male; 2 = female)
    *	Year of Birth
+   
+Badge Status will show whether commited code changes were successful: [![CircleCI](https://circleci.com/gh/christinebyron/MSDS434_Final-Project-MVP.svg?style=svg)](https://circleci.com/gh/christinebyron/MSDS434_Final-Project-MVP)
